@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Template Node JS common js",
   "scripts": {
+    "reset:migrate": "node src/tests/testMigrate.js",
+    "pretest": "npm run reset:migrate",
     "test": "jest --detectOpenHandles",
     "dev": "nodemon src/server.js"
   },
